@@ -11,3 +11,9 @@ Some utilities for Arch Linux maintenance
 ## Tools included
 
 - `package-tracker`: Track explicitly installed packages with the ability to create a custom baseline and commit changes.
+- `service-mapper`: Map services provided by explicitly installed packages to a markdown file.
+
+## TODO
+
+- Nerd font patcher
+- Home and etc backup
