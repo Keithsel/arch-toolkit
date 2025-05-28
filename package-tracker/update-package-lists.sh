@@ -7,6 +7,21 @@ PACKAGE_LISTS_DIR="$OBSIDIAN_VAULT_PATH/path/to/package-lists"  # Replace with y
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+if [[ "$OBSIDIAN_VAULT_PATH" == "path/to/vault" ]]; then
+    echo "Error: Please set your Obsidian vault path in the script."
+    echo "Edit the OBSIDIAN_VAULT_PATH variable in $SCRIPT_DIR/update-package-lists.sh"
+    echo "and $SCRIPT_DIR/commit-changes.sh"
+    exit 1
+fi
+
+if [[ "$PACKAGE_LISTS_DIR" == "$OBSIDIAN_VAULT_PATH/path/to/package-lists" ]]; then
+    echo "Error: Please set your package lists directory in the script."
+    echo "Edit the PACKAGE_LISTS_DIR variable in $SCRIPT_DIR/update-package-lists.sh"
+    echo "and $SCRIPT_DIR/commit-changes.sh"
+    exit 1
+fi
+
+mkdir -p "$OBSIDIAN_VAULT_PATH"
 mkdir -p "$PACKAGE_LISTS_DIR"
 
 DATE=$(date '+%Y-%m-%d %H:%M:%S')

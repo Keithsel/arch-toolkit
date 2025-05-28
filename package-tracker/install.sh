@@ -14,11 +14,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-if [[ ! -f "$HOOK_FILE" ]]; then
-    echo "Error: Hook file not found at $HOOK_FILE"
-    exit 1
-fi
-
 if [[ ! -f "$UPDATE_SCRIPT" ]]; then
     echo "Error: Update script not found at $UPDATE_SCRIPT"
     exit 1
@@ -53,8 +48,9 @@ echo ""
 echo "To edit the path, run:"
 echo "vim (or your preferred editor) $UPDATE_SCRIPT"
 echo ""
-echo "Look for the line: OBSIDIAN_VAULT_PATH="
-echo "And change it to your actual Obsidian vault path."
+echo "Look for the line: OBSIDIAN_VAULT_PATH= and PACKAGE_LISTS_DIR="
+echo "and change it to your actual Obsidian vault path and package lists directory,"
+echo "they will automatically be created if they don't exist."
 echo ""
 echo "After setting the correct path, test the script manually:"
 echo "$UPDATE_SCRIPT"
