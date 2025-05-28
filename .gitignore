@@ -1,0 +1,16 @@
+# Generated package list files
+package-tracker/.baseline_*.txt
+package-tracker/.current_*.tmp
+package-tracker/native_packages.txt
+package-tracker/foreign_packages.txt
+package-tracker/explicitly_installed.txt
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
