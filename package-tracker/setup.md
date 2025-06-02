@@ -10,7 +10,7 @@
 - Run `install.sh` to install the hooks:
 
   ```bash
-  ./install.sh
+  sudo ./install.sh
   ```
 
 - Run `commit-changes.sh` to create the baseline and commit the changes:
@@ -20,3 +20,13 @@
   ```
 
 - Every time you install or remove a package, the `package-tracker` will automatically update the package list and show the changes in the `Recent Changes` note in your Obsidian vault. If you want to commit the changes, run `commit-changes.sh` again.
+
+## Uninstall
+
+To remove the package tracker hooks and stop automatic tracking:
+
+```bash
+sudo ./uninstall.sh
+```
+
+**Note:** This only removes the pacman hooks. Your existing package list files in Obsidian will be preserved.
