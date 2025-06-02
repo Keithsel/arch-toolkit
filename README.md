@@ -10,10 +10,12 @@ Some utilities for Arch Linux maintenance
 
 ## Tools included
 
-- `package-tracker`: Track explicitly installed packages with the ability to create a custom baseline and commit changes.
-- `service-mapper`: Map services provided by explicitly installed packages to a markdown file.
-- `backup`: Backup tool using rsync with exclusions and logging capabilities.
+- **`package-tracker`**: Track explicitly installed packages with the ability to create a custom baseline and track changes.
+- **`service-mapper`**: Map services provided by explicitly installed packages to a markdown file.
+- **`backup`**: Backup tool using rsync with exclusions and logging capabilities.
+- **`bulk-convert-documents`**: Convert documents between formats using LibreOffice in headless mode.
+- **`nerd-font-patch`**: Patch fonts with Nerd Fonts icons and glyphs for terminal/editor use.
 
 ## TODO
 
-- Nerd font patcher
+- Needs more ideas lol

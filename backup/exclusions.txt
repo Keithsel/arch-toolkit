@@ -17,6 +17,10 @@ tmp/
 .config/*/Profile*/Cache/
 .config/*/Profile*/Code?Cache/
 .config/*/Profile*/GPUCache/
+.config/*/*/Cache/
+.config/*/*/Code?Cache/
+.config/*/*/GPUCache/
+.config/*/*/Service?Worker/
 .mozilla/firefox/*/cache2/
 .mozilla/firefox/*/startupCache/
 .mozilla/firefox/*/OfflineCache/

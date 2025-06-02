@@ -1,9 +1,25 @@
 #!/bin/bash
 
-SOURCE="path/to/source"  # Replace with your actual source path
-DESTINATION="/path/to/destination"  # Replace with your actual destination path
+set -e
+
+SOURCE="path/to/source"  # Replace with your actual source directory
+DESTINATION="path/to/destination"  # Replace with your actual destination directory
 BACKUP_DATE=$(date +%Y-%m-%d)
 LOG_FILE="$DESTINATION/backup_log_$BACKUP_DATE.txt"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if [[ "$SOURCE" == "path/to/source" ]]; then
+    echo "Error: Please set your source directory in the script."
+    echo "Edit the SOURCE variable in $SCRIPT_DIR/backup.sh"
+    exit 1
+fi
+
+if [[ "$DESTINATION" == "path/to/destination" ]]; then
+    echo "Error: Please set your destination directory in the script."
+    echo "Edit the DESTINATION variable in $SCRIPT_DIR/backup.sh"
+    exit 1
+fi
 
 if [ ! -d "$(dirname "$DESTINATION")" ]; then
     echo "Error: Backup destination not available."
