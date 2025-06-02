@@ -1,0 +1,81 @@
+# System-wide cache directories
+.cache/
+tmp/
+.tmp/
+**/Cache/
+**/cache/
+**/caches/
+**/CachedData/
+**/.cache/
+
+# Browser caches
+.config/*/Default/Cache/
+.config/*/Default/Code?Cache/
+.config/*/Default/GPUCache/
+.config/*/Default/Service?Worker/
+.config/*/Default/DawnCache/
+.config/*/Profile*/Cache/
+.config/*/Profile*/Code?Cache/
+.config/*/Profile*/GPUCache/
+.mozilla/firefox/*/cache2/
+.mozilla/firefox/*/startupCache/
+.mozilla/firefox/*/OfflineCache/
+
+# Application-specific caches
+.config/Code/Cache/
+.config/Code/CachedData/
+.config/Code/Service?Worker/
+.config/Code/logs/
+.config/thorium/Default/Cache/
+.config/thorium/Default/Code?Cache/
+.zen/*/Cache/
+.zen/*/Code?Cache/
+.local/share/Trash/
+.local/share/recently-used.xbel
+
+# Development tool caches
+.nuget/packages/
+*/node_modules/
+*/.gradle/
+*/target/
+*/__pycache__/
+*/.ipynb_checkpoints/
+*/.pytest_cache/
+*/.mypy_cache/
+*/build/
+*/dist/
+*/.next/
+*/.vite/
+*/coverage/
+*/.nyc_output/
+
+# Package manager caches
+.cargo/registry/
+.cargo/git/
+.rustup/toolchains/*/share/
+.npm/_cacache/
+.yarn/cache/
+.pnpm-store/
+.pip/cache/
+.poetry/cache/
+.local/share/virtualenvs/
+
+# Runtime and temporary files
+.nvm/
+.dotnet/
+.electron-gyp/
+.codeium/
+.flatpak-builder/
+.thunderbird/
+.ollama/
+
+# Large directories that are easily replaceable
+Games/
+R/
+go/
+genspark2api/
+
+# Log files
+*.log
+**/logs/
+.xsession-errors*
